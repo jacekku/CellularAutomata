@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+ <link href="libraries/css/bootstrap.css" rel="stylesheet" />
+<link href="libraries/css/bootstrap-theme.css" rel="stylesheet" />
+<script src="libraries/js/bootstrap.min.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style. 
+       You might only need one of these values set. -->
+  <style>*{}
+  canvas{border:1px solid black;margin:1px}
+  p,h3,h1{text-align:center}
+  </style>
+</head>
+
+<body>
+<div class="container" >
+<h1>Elementary Cellular Automaton Generator</h1>
+<p id="holder"></p>
+<p>
+	<h3>Repeat Conditions</h3>
+	<p>new generation every<input type="number" class="timing"/>ms</p>
+	<h3>Rule Settings</h3>
+	<p>RULE:<input type="number" class="rule"/><input type="checkBox" class="complimentaryRule">Complimentary</input></p>
+	<h3>Initial Conditions</h3>
+	<p>
+	<input type="checkBox" class="populateSettings leftCorner">Left Corner</input>
+	<input type="checkBox" class="populateSettings center">Center</input>
+	<input type="checkBox" class="populateSettings rightCorner">Right Corner</input>
+	<input type="checkBox" class="populateSettings randomly">Randomly</input>
+	</p>
+	<h3 class="generation">Generation: 0</h3>
+	<p>
+	<button type="button" class="step btn btn-primary">Step</button>
+	<button type="button" class="repeat btn btn-default">Repeat</button>
+	<button type="button" class="reset btn btn-primary">Reset</button>
+	<button type="button" class="populate btn btn-primary">Populate</button>
+	<br/>
+	</p>
+</p>
+
+</div>
+</body>
+  <script language="javascript" type="text/javascript" src="cellularAutomataBetterP5.js"></script>
+
+</html>
