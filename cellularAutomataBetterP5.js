@@ -35,11 +35,9 @@ document.querySelector(".timing"),
   generation:
 document.querySelector(".generation")
   }
-//TODO convert to 8bit characters 
-//TODO store state of automata using characters instead of strings of 1 & 0 s 
-//				like QANvaSJJe  instead of 1000101010100101010 thtat is tupids
+
 function setup() {
-  cnv=createCanvas(512, 1024,P2D)
+  cnv=createCanvas(300, 300,P2D)
   cnv.parent("holder")
   pixelDensity(1)
   noStroke()
