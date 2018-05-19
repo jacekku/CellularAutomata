@@ -1,3 +1,4 @@
+//TODO use window.requestAnimationFrame() or redraw() from P5.js
 let rule=90
 let ruleSet=""
 let complimentary=false
@@ -10,7 +11,7 @@ let cnv
 let populateSettings={
   leftCorner:false, 
   rightCorner:false, 
-  center:true, 
+  center:true,  
   randomly:false
   }
 let buttons={
